@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "PyAPM"
+version = "1.0.0"
+description = "Python Automated Polymer Modeler for LAMMPS"
+authors = [{name = "Tianyi Wang, Liquan Wang", email = "y11220031@mail.ecust.edu.cn"}]
+license = {text = "MIT"}
+readme = "README.md"
+requires-python = ">=3.7"
+dependencies = [
+    "numpy>=1.19",
+    "MDAnalysis>=2.0",
+    "scipy>=1.5",
+    "pandas>=1.0",
+    "natsort>=8.0"
+]
+
+[project.optional-dependencies]
+dev = ["pytest", "black", "flake8", "sphinx"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["PyAPM*"]
+
+[tool.setuptools.package-data]
+PyAPM = ["dreiding.lt", "AutoMapper/*.py"]
