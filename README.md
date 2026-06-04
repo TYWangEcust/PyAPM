@@ -120,8 +120,7 @@ A full API documentation is under construction. For now, please refer to the doc
 ## Citation
 If you use PyAPM in your work, please cite:
 
-- **Software**: Tianyi Wang. PyAPM: Python Automated Polymer Modeler for LAMMPS. Version 1.0.0. GitHub: https://github.com/Tianyi_Wang/PyAPM  
-  [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.xxxxxxx.svg)](https://doi.org/10.5281/zenodo.xxxxxxx)
+- **Software**: Tianyi Wang. PyAPM: Python Automated Polymer Modeler for LAMMPS. Version 1.0.0. GitHub: https://github.com/TYWangEcust/PyAPM.git
 
 - **Paper** (to appear)
 
