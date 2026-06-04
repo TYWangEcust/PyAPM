@@ -1,0 +1,9 @@
+atom_style full
+units           real
+bond_style      harmonic
+angle_style     harmonic
+dihedral_style  charmm
+improper_style  umbrella
+special_bonds   dreiding
+pair_style      lj/cut/coul/long 10.0
+kspace_style    ewald 0.0001

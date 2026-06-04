@@ -1,0 +1,10 @@
+import "Polymer_1.lt"
+
+molecule1 = new Polymer1 [10].move(0,0,10)
+
+write_once("Data Boundary")
+ {
+   0.0    50     xlo xhi
+   0.0    50     ylo yhi
+   0.0    50     zlo zhi
+}
