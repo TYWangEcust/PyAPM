@@ -1,0 +1,73 @@
+import "dreiding.lt" 
+
+Polymer1 inherits DREIDING 
+{
+
+write("Data Atoms") 
+{
+    $atom:0  $mol:0  @atom:N_3	-0.357914	2.384350	0.001029	-0.004805
+    $atom:1  $mol:0  @atom:C_R	0.026364	0.972360	0.006851	-0.003033
+    $atom:2  $mol:0  @atom:C_R	-0.040937	0.272906	1.225795	0.002546
+    $atom:3  $mol:0  @atom:C_R	-0.058213	-1.120223	1.236550	0.013223
+    $atom:4  $mol:0  @atom:C_R	-0.036351	-1.821414	0.036091	0.014592
+    $atom:5  $mol:0  @atom:C_R	0.095295	-1.135332	-1.187073	-0.003674
+    $atom:6  $mol:0  @atom:S_3	0.025171	-2.085941	-2.697334	-0.031421
+    $atom:7  $mol:0  @atom:O_2	-0.164313	-1.661677	-3.562782	-1.227928
+    $atom:8  $mol:0  @atom:O_2	-0.164313	-1.673495	-3.588735	1.151248
+    $atom:9  $mol:0  @atom:C_R	0.095295	-3.856080	-2.483722	-0.052226
+    $atom:10  $mol:0  @atom:C_R	-0.036351	-4.429600	-1.754483	-1.101117
+    $atom:11  $mol:0  @atom:C_R	-0.058213	-5.794786	-1.474497	-1.092851
+    $atom:12  $mol:0  @atom:C_R	-0.040937	-6.592516	-1.930480	-0.041541
+    $atom:13  $mol:0  @atom:C_R	0.026364	-6.025339	-2.673463	1.007673
+    $atom:14  $mol:0  @atom:N_3	-0.357914	-6.829251	-3.130589	2.075575
+    $atom:15  $mol:0  @atom:C_R	-0.015785	-4.650155	-2.944505	0.998902
+    $atom:16  $mol:0  @atom:C_R	-0.015785	0.260075	-1.203843	-0.008195
+    $atom:17  $mol:0  @atom:H	0.142323	2.905765	-0.887879	-0.002395
+    $atom:18  $mol:0  @atom:H	0.142323	2.910803	0.887001	-0.000604
+    $atom:19  $mol:0  @atom:H	0.063590	0.806608	2.166590	0.000827
+    $atom:20  $mol:0  @atom:H	0.061871	-1.663633	2.172880	0.019761
+    $atom:21  $mol:0  @atom:H	0.063661	-2.900361	0.071173	0.027248
+    $atom:22  $mol:0  @atom:H	0.063661	-3.809828	-1.378006	-1.906325
+    $atom:23  $mol:0  @atom:H	0.061871	-6.228089	-0.891246	-1.895191
+    $atom:24  $mol:0  @atom:H	0.063590	-7.649337	-1.699143	-0.039098
+    $atom:25  $mol:0  @atom:H	0.142323	-6.415305	-3.673088	2.848552
+    $atom:26  $mol:0  @atom:H	0.142323	-7.839773	-2.930850	2.094627
+    $atom:27  $mol:0  @atom:H	0.065500	-4.201205	-3.493420	1.817478
+    $atom:28  $mol:0  @atom:H	0.065500	0.787782	-2.150051	-0.017206
+  }
+write("Data Bond List")
+   {
+$bond:0	$atom:0	$atom:1
+$bond:1	$atom:0	$atom:17
+$bond:2	$atom:0	$atom:18
+$bond:3	$atom:1	$atom:2
+$bond:4	$atom:1	$atom:16
+$bond:5	$atom:2	$atom:3
+$bond:6	$atom:2	$atom:19
+$bond:7	$atom:3	$atom:4
+$bond:8	$atom:3	$atom:20
+$bond:9	$atom:4	$atom:5
+$bond:10	$atom:4	$atom:21
+$bond:11	$atom:5	$atom:6
+$bond:12	$atom:5	$atom:16
+$bond:13	$atom:6	$atom:7
+$bond:14	$atom:6	$atom:8
+$bond:15	$atom:6	$atom:9
+$bond:16	$atom:9	$atom:10
+$bond:17	$atom:9	$atom:15
+$bond:18	$atom:10	$atom:11
+$bond:19	$atom:10	$atom:22
+$bond:20	$atom:11	$atom:12
+$bond:21	$atom:11	$atom:23
+$bond:22	$atom:12	$atom:13
+$bond:23	$atom:12	$atom:24
+$bond:24	$atom:13	$atom:14
+$bond:25	$atom:13	$atom:15
+$bond:26	$atom:14	$atom:25
+$bond:27	$atom:14	$atom:26
+$bond:28	$atom:15	$atom:27
+$bond:29	$atom:16	$atom:28
+  }
+
+
+}
