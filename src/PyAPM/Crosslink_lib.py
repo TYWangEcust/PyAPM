@@ -165,7 +165,7 @@ def write_lammps_crosslink(n_react, react_temp):
 		in_file.write('write_data\tequil.data pair ij\nwrite_restart\tequil.restart\n\n')
 		in_file.write('fix\tfxrct all bond/react stabilization yes statted_grp .03 ')
 		for n in range(n_react):
-			in_file.write('react rxn%d all 1000 0.0 10.0 pre%d post%d automap%d.data stabilize_steps 100 prob %.3f 114514 '%(n,n,n,n,1/n_react))
+			in_file.write('react rxn%d all 1000 1.0 4.0 pre%d post%d automap%d.data stabilize_steps 100 prob %.3f 114514 '%(n,n,n,n,1/n_react))
 		in_file.write('\n')
 		in_file.write('fix\t8 statted_grp_REACT npt temp %.1f %.1f 100 iso 1 1 1000\n'%(react_temp, react_temp))
 		in_file.write('fix\t9 bond_react_MASTER_group temp/rescale 1 %.1f %.1f 1 1\n'%(react_temp, react_temp))

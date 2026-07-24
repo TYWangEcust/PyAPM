@@ -105,12 +105,15 @@ class CrosslinkBuilder:
 			element_str.append(masses[h][3])
 		n = ((len(masses)+1)*len(masses))/2
 		lib.remove_first_n_lines('cleanedsystem.in.settings', n)
-		
+		elements = result_string.split()
+		print(elements)
 		cmd_map = ['python', 'AutoMapper.py', '.', 'newmap', 'cleanedpre_reaction.data', 'cleanedpost_reaction.data',
 			'--save_name', 'pre-molecule.data', 'post-molecule.data',
-			'--ba', self.bond_atom_style[0], self.bond_atom_style[1],
-			'--ebt', result_string]
+			'--ba', '%s'%self.bond_atom_style[0], '%s'%self.bond_atom_style[1],
+			'--ebt'] + elements
+		print(cmd_map)
 		result_map = subprocess.run(cmd_map, capture_output=True, text=True)
+		print(result_map)
 		if result_map.returncode != 0:
 			print("AutoMapper newmap failed:", result_map.stderr)
 			return 1

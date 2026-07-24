@@ -244,7 +244,7 @@ def build_crosslink_polymer(smi_pre, smi_post, bond_atom_style, n_react, react_t
 	lib.write_lammps_crosslink(n_react, react_temp)
 	#Replace LJ interaction parameters
 	system.change_lj_coeff(file1 = 'system.in.init', file2 = 'cleanedsystem.data', file3 = 'cleanedsystem.in.settings')
-	command = ['mpirun', '-np', '8', 'lmp_mpi', '-in', 'in.md']
+	command = ['mpirun', '-np', '32', 'lmp_2408', '-in', 'in.md']
 	system.run(command, 'crosslink.data', timeout=3600)#Run lammps
 	os.chdir('..')
 	return 0
