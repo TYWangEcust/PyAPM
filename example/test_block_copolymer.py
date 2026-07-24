@@ -17,4 +17,4 @@ if __name__ == "__main__":
 	n_seg = [4]
 	segn = [[2,8,8,2]]
 	segt = [[1,2,3,1]]
-	bulid_block_copolymer(smi, n_moltype, box, n_mol, length, component, n_seg, segn, segt)
+	build_block_copolymer(smi, n_moltype, box, n_mol, length, component, n_seg, segn, segt)

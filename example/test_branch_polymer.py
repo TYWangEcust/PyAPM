@@ -1,12 +1,14 @@
-from ACPSB import build_branch_polymer
+from PyAPM import build_branch_polymer
+from pkg_resources import resource_filename
 import os
 import shutil
 
 
 if __name__ == "__main__":
-	os.mkdir('test7')
-	shutil.copy('dreiding.lt','test7')
-	os.chdir('test7')
+	os.mkdir('test6')
+	dreiding_path = resource_filename('PyAPM', 'dreiding.lt')
+	shutil.copy(dreiding_path,'test6')
+	os.chdir('test6')
 	smi = [["COC(=O)C(C)(*)C*","CC(*)(C*)C(=O)OC1CC2CC1C1CC(CO)CC21","CC(*)(C*)C(=O)OC12CC3CC(CC(C3)C1)C2", "RCOC(=O)C(*)(C)C*"]]
 	n_moltype = 1
 	box = [50,50,50]
