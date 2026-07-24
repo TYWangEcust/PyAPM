@@ -1,0 +1,9 @@
+
+tolerance 2.5
+filetype pdb
+output Polymer.pdb
+
+structure Chain_1.pdb
+  number 1
+  inside box 0. 0. 0. 20. 20. 20.
+end structure
